@@ -10,7 +10,7 @@
 	<body>
 		<div class="fixed">
 			<a class="fix-one">免费体验</a>
-			<a href="#" class="top"></a>
+			<a class="top"></a>
 		</div>
 		<div class="bigOver">
 			<div class="bigTop">
@@ -358,8 +358,18 @@
 				</p>
 			</div>	
 		</div>
-		<video width="100%" loop="loop" autoplay="autoplay" poster="https://g.alicdn.com/alishu/portal/0.0.242/imgs/home/video-bg.jpg" class="video" webkit-playsinline=""><source src="https://vodcdn.alicdn.com/oss/ali-video/f66670b180984fe1b70356ac587b1c12/1460617995/video.mp4" type="video/mp4"></video>
+		<video width="100%" loop="loop" autoplay="autoplay" class="video"><source src="https://vodcdn.alicdn.com/oss/ali-video/f66670b180984fe1b70356ac587b1c12/1460617995/video.mp4" type="video/mp4"></video>
 		<script type="text/javascript" src="lib/jquery@1.7.1.min.js"></script>
 		<script type="text/javascript" src="./pro-resource/js/banner.js"></script>
+		<script>
+		function scoTop(){
+			$(".fixed a.top").click(function(){
+				$("html, body").animate({
+					scrollTop:0
+				},"slow");
+			});
+		}
+		scoTop();
+		</script>
 	</body>
 </html>
